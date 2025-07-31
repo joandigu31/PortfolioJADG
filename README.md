@@ -10,7 +10,7 @@ Soy técnico especializado en [tu área]. Tengo experiencia en:
 
 ## 🛠 Habilidades y herramientas
 - **Máquinas:** Cognex
-![Cognex camera](imagenes/cognex.jpg)
+![Cognex camera](Imagenes/cognex.jpg)
 
 - 
 - **Software:** [Ejemplo: SolidWorks, AutoCAD, Altium Designer]
