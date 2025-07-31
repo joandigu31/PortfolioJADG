@@ -9,7 +9,10 @@ Soy técnico especializado en [tu área]. Tengo experiencia en:
 - Procesos de SMT y manufactura electrónica
 
 ## 🛠 Habilidades y herramientas
-- **Máquinas:** [Nombres de máquinas]
+- **Máquinas:** Cognex
+![Cognex camera](imagenes/cognex.jpg)
+
+- 
 - **Software:** [Ejemplo: SolidWorks, AutoCAD, Altium Designer]
 - **Procesos:** [Ejemplo: SMD, inyección de plástico, ensamble electrónico]
 
