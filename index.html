@@ -260,42 +260,72 @@
 
 <section>
     <h2>Software</h2>
+
     <div class="software-skill">
         <span class="skill-name">Microsoft Office Suite</span>
         <div class="skill-bar">
             <div class="skill-fill expert">Expert</div>
         </div>
     </div>
+
 </section>
 
 <style>
-    /* Estilo para la sección de software */
+    /* Contenedor de cada habilidad */
     .software-skill {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
+
+    /* Nombre del software */
     .skill-name {
         font-weight: bold;
         margin-bottom: 5px;
         display: block;
         color: #00416a;
     }
+
+    /* Barra de fondo */
     .skill-bar {
         background: #e0eaf3;
         border-radius: 20px;
         overflow: hidden;
         height: 25px;
+        width: 70%; /* Más corta para verse estilizada */
+        position: relative;
+        display: flex;
     }
+
+    /* Divisiones de la barra */
+    .skill-bar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent,
+            transparent 19px,
+            rgba(255,255,255,0.5) 20px
+        );
+        pointer-events: none;
+    }
+
+    /* Relleno de la barra */
     .skill-fill {
         height: 100%;
         color: white;
         text-align: right;
         padding-right: 10px;
         line-height: 25px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         font-weight: bold;
         border-radius: 20px 0 0 20px;
+        white-space: nowrap;
     }
-    /* Colores según nivel */
+
+    /* Niveles */
     .expert {
         width: 100%;
         background: linear-gradient(90deg, #00416a, #0073b1);
