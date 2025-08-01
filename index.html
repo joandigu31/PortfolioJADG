@@ -189,9 +189,68 @@
 <section class="contact">
     <h2>Social & Contact</h2>
     <p>📧 Email: <a href="mailto:joandigu@outlook.com">joandigu@outlook.com</a></p>
-    <p>💼 LinkedIn: <a href="www.linkedin.com/in/jose-antonio-diaz-gutierrez" target="_blank">linkedin.com/in/jose-antonio-diaz-gutierrez</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/jose-antonio-diaz-gutierrez" target="_blank">linkedin.com/in/jose-antonio-diaz-gutierrez</a></p>
     <p>🌐 Website: <a href="https://bold.pro/my/josantonio-dazgutirrez-250514150812" target="_blank">Visit my website</a></p>
-    </section>
+</section>
+
+<style>
+    /* Efecto para enlaces */
+    a {
+        color: #00416a;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    /* Subrayado animado */
+    a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 3px;
+        right: 0;
+        background: #0073b1;
+        transition: width 0.3s ease;
+        -webkit-transition: width 0.3s ease;
+    }
+
+    /* Hover: color, zoom y subrayado */
+    a:hover {
+        color: #0073b1;
+        transform: scale(1.05);
+    }
+
+    a:hover::after {
+        width: 100%;
+        left: 0;
+        background: #0073b1;
+    }
+
+    /* Estilo general para la sección */
+    .contact {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    .contact h2 {
+        color: #00416a;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    .contact p {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+</style>
+
 
 <footer>
     &copy; 2025 José Antonio Díaz - Portfolio Profesional
