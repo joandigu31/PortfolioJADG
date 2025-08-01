@@ -59,7 +59,7 @@
             background: #00416a;
             color: white;
         }
-        /* Efecto hover uniforme para todas las secciones tipo lista */
+        /* Efecto hover uniforme para listas */
         .hover-list li {
             background: #f9f9f9;
             transition: all 0.2s ease;
@@ -69,7 +69,7 @@
             background: #f1f1f1;
             transform: translateY(-2px);
         }
-        /* Imágenes en listas de equipo */
+        /* Imágenes de equipo */
         .equipment-list img {
             width: 120px;
             height: 135px; /* 150% más alto */
@@ -78,11 +78,18 @@
             margin-right: 15px;
             flex-shrink: 0;
         }
-        /* Imagen panorámica para la primera (smt_line) */
+        /* Primera imagen panorámica */
+        .equipment-list li:first-child {
+            flex-direction: column;
+            align-items: center;
+        }
         .equipment-list li:first-child img {
-            width: 200px; /* más ancha */
-            height: 135px;
-            object-fit: cover;
+            width: 100%;
+            height: auto;
+            max-width: 900px;
+            object-fit: contain;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
         .equipment-list li {
             display: flex;
@@ -269,4 +276,3 @@
 
 </body>
 </html>
-
