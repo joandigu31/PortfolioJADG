@@ -72,11 +72,17 @@
         /* Imágenes en listas de equipo */
         .equipment-list img {
             width: 120px;
-            height: 90px;
+            height: 135px; /* 150% más alto */
             object-fit: cover;
             border-radius: 5px;
             margin-right: 15px;
             flex-shrink: 0;
+        }
+        /* Imagen panorámica para la primera (smt_line) */
+        .equipment-list li:first-child img {
+            width: 200px; /* más ancha */
+            height: 135px;
+            object-fit: cover;
         }
         .equipment-list li {
             display: flex;
@@ -263,3 +269,4 @@
 
 </body>
 </html>
+
