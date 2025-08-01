@@ -36,6 +36,7 @@
             color: #00416a;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
+            text-align: center;
         }
         ul {
             list-style: none;
@@ -58,6 +59,29 @@
             background: #00416a;
             color: white;
         }
+        /* Efecto hover uniforme para todas las secciones tipo lista */
+        .hover-list li {
+            background: #f9f9f9;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .hover-list li:hover {
+            background: #f1f1f1;
+            transform: translateY(-2px);
+        }
+        /* Imágenes en listas de equipo */
+        .equipment-list img {
+            width: 120px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .equipment-list li {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -71,18 +95,18 @@
 <section>
     <h2>Presentation</h2>
     <p>
-     Engineering professional with 12 years in the Automotive Industry, combining expertise in project management, 
-     process optimization, and technical leadership. Experienced as IT Manager and former Purchasing Manager, 
-     skilled in driving results through strategic thinking, problem‑solving, and collaboration. 
-     Currently pursuing Lean Six Sigma Black Belt certification (expected November 2025).
+        Engineering professional with 12 years in the Automotive Industry, combining expertise in project management, 
+        process optimization, and technical leadership. Experienced as IT Manager and former Purchasing Manager, 
+        skilled in driving results through strategic thinking, problem‑solving, and collaboration. 
+        Currently pursuing Lean Six Sigma Black Belt certification (expected November 2025).
     </p>
 </section>
 
 <section>
     <h2>Work History</h2>
-    <ul>
+    <ul class="hover-list">
         <li>
-            <strong>Engineering & IT Manager - Mexico Jinyoung Techno</strong> (January 2020 - Current)<br>
+            <strong>Engineering & IT Manager - Mexico Jinyoung Techno</strong> (January 2020 - Present)<br>
             Responsible for plant-wide engineering processes, including APQP, PPAP development, process validation, and new project design.
             Led ERP (Plex) implementation, achieving $150K USD in cost savings. Experienced in process 
             improvements using Lean Six Sigma, technical purchasing, and project management.
@@ -101,138 +125,67 @@
     </ul>
 </section>
 
-<style>
-    /* Estilo para enlaces con efecto */
-    a {
-        color: #00416a;
-        text-decoration: none;
-        position: relative;
-        display: inline-block;
-        transition: all 0.3s ease;
-    }
-
-    /* Subrayado animado */
-    a::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        display: block;
-        margin-top: 3px;
-        right: 0;
-        background: #0073b1;
-        transition: width 0.3s ease;
-        -webkit-transition: width 0.3s ease;
-    }
-
-    /* Hover: color, zoom y subrayado */
-    a:hover {
-        color: #0073b1;
-        transform: scale(1.05);
-    }
-
-    a:hover::after {
-        width: 100%;
-        left: 0;
-        background: #0073b1;
-    }
-
-    /* Estilo general para la sección */
-    section {
-        padding: 20px;
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        margin-bottom: 20px;
-        border-radius: 8px;
-    }
-
-    h2 {
-        color: #00416a;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    li {
-        background: #e9f3fb;
-        margin: 10px 0;
-        padding: 15px;
-        border-radius: 5px;
-    }
-</style>
-
-
 <section>
     <h2>Certifications & Diplomas</h2>
-    <ul>
-        <li>Black Belt in Lean Six Sigma (In-Progress, expected completion: early November 2025)</li>
+    <ul class="hover-list">
+        <li>Black Belt in Lean Six Sigma (In Progress, expected completion: November 2025)</li>
         <li>Core Tools</li>
         <li>APQP / PPAP</li>
         <li>FMEA AIAG-VGA</li>
         <li>IPC-A-610 & IPC7711/7721</li>
-        <li>Project Management and Agile fundamentals</li>
+        <li>Project Management and Agile Fundamentals</li>
         <li>CTPAT</li>
     </ul>
-    <a href="https://drive.google.com/drive/folders/13YobP3FxDc-BmmFyV-6cTLBCyKScDeT_" target="_blank" rel="noopener noreferrer" class="ribbon-link">
-        <img src="Imagenes/ribbon.jpg" alt="Ribbon Certification" class="ribbon-img">
+    <a href="https://drive.google.com/drive/folders/13YobP3FxDc-BmmFyV-6cTLBCyKScDeT_" target="_blank" rel="noopener noreferrer">
+        <img src="Imagenes/ribbon.jpg" alt="Ribbon Certification" style="max-width:160px;display:block;margin:20px auto;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.15);transition:transform 0.3s ease;">
     </a>
-    <p class="ribbon-text">Click on the ribbon to see all certifications</p>
-
-    <style>
-        .ribbon-link {
-            display: block;
-            width: fit-content;
-            margin: 20px auto 5px auto;
-        }
-        .ribbon-img {
-            max-width: 160px;
-            width: 100%;
-            height: auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-            display: block;
-        }
-        .ribbon-img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-        }
-        .ribbon-text {
-            text-align: center;
-            font-style: italic;
-            color: #555;
-            font-size: 0.9rem;
-            margin: 0 0 20px 0;
-            font-family: Arial, sans-serif;
-        }
-        ul {
-            max-width: 600px;
-            margin: 0 auto;
-            padding-left: 20px;
-            font-family: Arial, sans-serif;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #222;
-        }
-        h2 {
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #2a2a2a;
-        }
-    </style>
+    <p style="text-align:center;font-style:italic;color:#555;font-size:0.9rem;">Click on the ribbon to see all certifications</p>
 </section>
-
-
 
 <section>
     <h2>Machinery / Equipment</h2>
-    <ul class="equipment-list">
+    <ul class="equipment-list hover-list">
+        <li>
+            <img src="Imagenes/smt_line.jpg" alt="Full SMT Line">
+            Full SMT line for PCBs, automotive industry.
+        </li>
+        <li>
+            <img src="Imagenes/laser_YJ-LINK.jpg" alt="PCB Laser Marker">
+            PCB laser marker for traceability.
+        </li>
+        <li>
+            <img src="Imagenes/SPP.jpg" alt="Solder Paste Printer">
+            Solder Paste Printer for SMT lines.
+        </li>
+        <li>
+            <img src="Imagenes/SPI.jpg" alt="Solder Paste Inspection">
+            Solder Paste Inspection, to detect paste application defects.
+        </li>
+        <li>
+            <img src="Imagenes/CMM.jpg" alt="Chip Mounter Machine">
+            Chip Mounter Machine, to place components in PCBs.
+        </li>
+        <li>
+            <img src="Imagenes/oven.jpg" alt="Reflow Oven">
+            Reflow oven (including vacuum or nitrogen).
+        </li>
+        <li>
+            <img src="Imagenes/xray.jpg" alt="X-ray Machine">
+            X-ray machine for checking BGA components and selective soldering fill.
+        </li>
+        <li>
+            <img src="Imagenes/stencil.jpg" alt="Stencil Washer Machine">
+            Stencil washer machine.
+        </li>
+        <li>
+            <img src="Imagenes/conveyors.jpg" alt="PCB Conveyors">
+            Several conveyors for handling PCB movements.
+        </li>
+        <li>
+            <img src="Imagenes/microscope.jpg" alt="Microscopes">
+            Microscopes for PCB rework and inspection.
+        </li>
+        <!-- Equipos originales -->
         <li>
             <img src="Imagenes/cognex.jpg" alt="Cognex Vision System">
             Use of vision system to detect defects, OCR, and improve inspection, brand Cognex.
@@ -290,42 +243,12 @@
             Robot soldering for PCB applications, brand Japan Unix.
         </li>
     </ul>
-
-    <style>
-        .equipment-list {
-            list-style: none;
-            padding: 0;
-            max-width: 900px;
-            margin: auto;
-            font-family: Arial, sans-serif;
-        }
-        .equipment-list li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            background: #f9f9f9;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .equipment-list img {
-    width: 120px;
-    height: 90px;
-    object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
-    border-radius: 5px;
-    margin-right: 15px;
-    flex-shrink: 0;
-}
-
-        
-        .equipment-list li:hover {
-            background: #f1f1f1;
-            transform: translateY(-2px);
-            transition: all 0.2s ease;
-        }
-    </style>
 </section>
 
+<section>
+    <h2>Software</h2>
+    <p style="text-align:center; color:#555; font-style:italic;">(Content coming soon)</p>
+</section>
 
 <section class="contact">
     <h2>Social & Contact</h2>
@@ -334,69 +257,9 @@
     <p>🌐 Website: <a href="https://bold.pro/my/josantonio-dazgutirrez-250514150812" target="_blank">Visit my website</a></p>
 </section>
 
-<style>
-    /* Efecto para enlaces */
-    a {
-        color: #00416a;
-        text-decoration: none;
-        position: relative;
-        display: inline-block;
-        transition: all 0.3s ease;
-    }
-
-    /* Subrayado animado */
-    a::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        display: block;
-        margin-top: 3px;
-        right: 0;
-        background: #0073b1;
-        transition: width 0.3s ease;
-        -webkit-transition: width 0.3s ease;
-    }
-
-    /* Hover: color, zoom y subrayado */
-    a:hover {
-        color: #0073b1;
-        transform: scale(1.05);
-    }
-
-    a:hover::after {
-        width: 100%;
-        left: 0;
-        background: #0073b1;
-    }
-
-    /* Estilo general para la sección */
-    .contact {
-        padding: 20px;
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        margin-bottom: 20px;
-        border-radius: 8px;
-    }
-
-    .contact h2 {
-        color: #00416a;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-    }
-
-    .contact p {
-        margin: 10px 0;
-        font-size: 1rem;
-    }
-</style>
-
-
 <footer>
-    &copy; 2025 José Antonio Díaz - Portfolio Profesional
+    &copy; 2025 José Antonio Díaz - Professional Portfolio
 </footer>
 
 </body>
 </html>
-
