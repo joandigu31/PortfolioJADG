@@ -260,8 +260,60 @@
 
 <section>
     <h2>Software</h2>
-    <p style="text-align:center; color:#555; font-style:italic;">(Content coming soon)</p>
+    <div class="software-skill">
+        <span class="skill-name">Microsoft Office Suite</span>
+        <div class="skill-bar">
+            <div class="skill-fill expert">Expert</div>
+        </div>
+    </div>
 </section>
+
+<style>
+    /* Estilo para la sección de software */
+    .software-skill {
+        margin-bottom: 15px;
+    }
+    .skill-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #00416a;
+    }
+    .skill-bar {
+        background: #e0eaf3;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 25px;
+    }
+    .skill-fill {
+        height: 100%;
+        color: white;
+        text-align: right;
+        padding-right: 10px;
+        line-height: 25px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        border-radius: 20px 0 0 20px;
+    }
+    /* Colores según nivel */
+    .expert {
+        width: 100%;
+        background: linear-gradient(90deg, #00416a, #0073b1);
+    }
+    .advanced {
+        width: 80%;
+        background: linear-gradient(90deg, #00416a, #3399cc);
+    }
+    .intermediate {
+        width: 60%;
+        background: linear-gradient(90deg, #00416a, #66b2cc);
+    }
+    .basic {
+        width: 40%;
+        background: linear-gradient(90deg, #00416a, #99cce0);
+    }
+</style>
+
 
 <section class="contact">
     <h2>Social & Contact</h2>
